@@ -1,0 +1,53 @@
+body {
+    display: flex;
+}
+
+html {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.alinhamento {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#divMensagem {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    text-align: center;
+}
+
+#divImagem {
+    margin-right: 50px;
+}
+
+#divSecao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#divMensagem2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    text-align: left;
+}
+
+#heroi {
+    display: none
+}
+
+#icanvas {
+    background-image: url("Imagens/Espaço.png");
+    background-size: cover;
+    background-repeat: round;
+    margin-block-end: 2em;
+}

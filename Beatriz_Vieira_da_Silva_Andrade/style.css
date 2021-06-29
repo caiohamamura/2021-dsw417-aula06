@@ -1,0 +1,9 @@
+#heroi {
+    display: none
+  }
+  
+  #icanvas {
+    background-image: url(https://live.staticflickr.com/2373/2885789292_de08669085_b.jpg);
+    background-size: cover;
+    background-repeat: round;
+  }

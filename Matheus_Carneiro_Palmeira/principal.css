@@ -1,0 +1,9 @@
+#heroi {
+    display: none
+  }
+
+  #icanvas {
+    background-image: url(https://s1.1zoom.me/b5050/182/Sky_Mountains_Scotland_Scenery_Isle_of_Skye_Clouds_580712_1920x1200.jpg);
+    background-size: cover;
+    background-repeat: round;
+  }

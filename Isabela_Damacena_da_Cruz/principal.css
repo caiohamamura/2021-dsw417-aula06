@@ -1,0 +1,9 @@
+#heroi {
+    display: none
+  }
+  
+  #icanvas {
+    background-image: url(https://i.pinimg.com/originals/3d/78/4d/3d784dd3a26fc3ae7e6401a0d00b2e29.jpg);
+    background-size: cover;
+    background-repeat: round;
+  }

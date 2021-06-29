@@ -1,0 +1,87 @@
+"use strict";
+let canvas = document.getElementById("meu-canvas");
+let ctx = canvas.getContext("2d");
+let img = document.querySelector("#dog");
+
+
+
+let posx = 0;
+let posy = 0;
+let direcao = "l";
+
+
+
+const QDE_MOVIMENTO = 1;
+
+function limparCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function desenhaDog() {
+    ctx.drawImage(img, posx, posy, 100, 150);
+}
+
+function repeticaoPrincipal() {
+    switch (direcao) {
+        case "l":
+            if (posx + img.width < canvas.width -180)
+                posx += QDE_MOVIMENTO;
+            break;
+        case "o":
+            if (posx > 0)
+                posx -= QDE_MOVIMENTO;
+            break;
+        case "n":
+            if (posy > 0)
+                posy -= QDE_MOVIMENTO;
+            break;
+        case "s":
+            if (posy + img.height < canvas.height -4)
+                posy += QDE_MOVIMENTO;
+            break;
+
+        default:
+            break;
+    }
+    
+    if(posx + img.width >= (canvas.width -180) && posy + img.height >= canvas.height -4)
+    {
+        terminouDog();
+    }
+
+    limparCanvas();
+    desenhaDog();
+}
+
+let timer = setInterval(repeticaoPrincipal, 6);
+
+document.onkeydown = function(evento) {
+    switch (evento.key) {
+        case "ArrowUp":
+            if (direcao != "s")
+                direcao = "n";
+            break;
+        case "ArrowDown":
+            if (direcao != "n")
+                direcao = "s";
+            break;
+        case "ArrowRight":
+            if (direcao != "o")
+                direcao = "l";
+            break;
+        case "ArrowLeft":
+            if (direcao != "l")
+                direcao = "o";
+            break;
+
+        default:
+            break;
+    }
+}
+
+
+
+function terminouDog() {
+    clearInterval(timer);
+    alert("Você ganhou!");
+}

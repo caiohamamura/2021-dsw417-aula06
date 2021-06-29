@@ -1,0 +1,14 @@
+#meu-canvas {
+    background-image: url(https://i.pinimg.com/originals/38/43/ce/3843ce13ba3245c6e3a840de16ceebd5.jpg);
+    background-size: cover;
+    background-repeat: round;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#chegada {
+    position: absolute;
+    top: 500px;
+    left: 700px
+}

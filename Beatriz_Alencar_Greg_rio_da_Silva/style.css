@@ -1,0 +1,29 @@
+#coelho
+{
+  display: none;
+  position:fixed;
+
+}
+
+#cesta
+{
+  display: none;
+}
+
+#arvore
+{
+  display: none;
+  
+}
+
+
+#canvas {
+  background-image: url("https://image.freepik.com/vetores-gratis/pixel-art-jogo-fundo-grama-ceu-e-nuvens_210544-60.jpg");
+  
+  width: 550px;
+  height: 300px; 
+  border: 3px solid #73AD21;
+
+  background-size: cover;
+  background-repeat: round;
+} 

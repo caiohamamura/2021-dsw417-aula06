@@ -1,0 +1,13 @@
+callback -> função como argumento de outra;
+
+function soma(a,b, funcao){
+let reslt = a+b;
+if(funcao!==undefined){
+funcao(reslt);
+}
+return reslt;
+}
+------------------
+
+ctx.clearRact -> limpa canvas
+

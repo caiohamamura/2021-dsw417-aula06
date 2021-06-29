@@ -1,0 +1,9 @@
+#heroi {
+    display: none
+  }
+  
+  #icanvas {
+    background-image: url(https://fantasticocenario.files.wordpress.com/2012/04/loki_stark4.jpg);
+    background-size: cover;
+    background-repeat: round;
+  }

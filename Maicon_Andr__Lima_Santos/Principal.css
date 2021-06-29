@@ -1,0 +1,9 @@
+#heroi {
+    display: none;
+  }
+  
+  #icanvas {
+    background-image: url(labirinto.jpg);
+    background-size: cover;
+    background-repeat: round;
+  }

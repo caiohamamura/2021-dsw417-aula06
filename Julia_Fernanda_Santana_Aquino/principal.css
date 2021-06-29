@@ -1,0 +1,15 @@
+
+#casa
+{
+    position:absolute;
+    left: 1500px;
+    top: 580px;
+
+}
+
+#meu-canvas
+{
+    background-image: url('https://i.pinimg.com/736x/d9/0b/6e/d90b6e61a70d2a829992a0364088923b.jpg');
+    background-size: cover;
+    background-repeat: round; 
+}
